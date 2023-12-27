@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格增删改查</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_4180036_w374kq34ux.css">
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+</head>
+
+<body>
+    <script src="./index.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
+    <table class="table table-striped" id="table">
+        <tbody id="tbody">
+            <tr>
+                <th>序号</th>
+                <th>姓名</th>
+                <th>性别</th>
+                <th>年龄</th>
+                <th>地址</th>
+                <th>QQ</th>
+                <th>E-mail</th>
+                <th id="button">
+                    <button class="btn btn-success" id="add">新增</button>
+                </th>
+            </tr>
+        </tbody>
+    </table>
+    <div class="entirety">
+        <div class="entirety_box form">
+            <div class="quxiao">
+                <i class="iconfont icon-cancel"></i>
+            </div>
+            <div class="form-group clearfix">
+                <label class="col-sm-2 control-label">姓名：</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="name" placeholder="姓名">
+                </div>
+            </div>
+            <div class="form-group clearfix">
+                <label class="col-sm-2 control-label">性别：</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="gender" placeholder="性别">
+                </div>
+            </div>
+            <div class="form-group clearfix">
+                <label class="col-sm-2 control-label">年龄：</label>
+                <div class="col-sm-10">
+                    <input type="number" class="form-control" id="age" placeholder="年龄">
+                </div>
+            </div>
+            <div class="form-group clearfix">
+                <label class="col-sm-2 control-label">地址：</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="address" placeholder="地址">
+                </div>
+            </div>
+            <div class="form-group clearfix">
+                <label class="col-sm-2 control-label">QQ：</label>
+                <div class="col-sm-10">
+                    <input type="number" class="form-control" id="qq" placeholder="QQ">
+                </div>
+            </div>
+            <div class="form-group clearfix">
+                <label class="col-sm-2 control-label">E-mail：</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="email" placeholder="E-mail">
+                </div>
+            </div>
+            <div class="form-group clearfix">
+                <div class="col-sm-offset-2 col-sm-10" id="button">
+                    <button type="submit" class="btn btn-success" id="success">确认</button>
+                    <button type="submit" class="btn btn-danger" id="cancel">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="entirety_one">
+        <div class="entirety_box1">
+            <div id="button" style="display: flex; justify-content: space-between;">
+                <button type="submit" class="btn btn-success" id="success1">确认</button>
+                <button type="submit" class="btn btn-danger" id="cancel1">取消</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
